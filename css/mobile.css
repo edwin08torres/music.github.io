@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .main {
@@ -14,9 +17,9 @@
 }
 
 .main .article {
-    height: 60%;
+    height: 65%;
     min-width: 280px;
-    max-width: 340px;
+    max-width: 360px;
     width: 100%;
     margin: 0 20px;
     /* border: 2px solid red; */
@@ -38,7 +41,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    height: 40vh;
+    height: 45vh;
 }
 
 .main .article .card .descripcion .title {
@@ -49,18 +52,23 @@
     width: 80%;
     /* border: 2px solid red; */
     height: 100px;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .main .article .card .descripcion .title p {
     font-size: 16px;
+    margin-top: 4%;
+    color:hsl(224, 23%, 48%);
+    /* letter-spacing: .1rem; */
+    /* line-height: 1.6; */
+    text-align: center;
 }
 
 .main .article .card .descripcion .music-detail {
     width: 80%;
     /* border: 2px solid red; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 30px;
     align-items: center;
 }
@@ -74,12 +82,12 @@
 }
 
 .main .article .card .descripcion .music-detail .change {
-    color: hsl(223, 47%, 23%);
+    color: hsl(224, 23%, 55%);
     font-size: 20px;
 }
 
 .main .article .card .descripcion .music-detail .change:hover {
-    color: hsl(245, 75%, 52%);
+    color: hsla(245, 75%, 52%, 0.673);
     cursor: pointer;
     text-decoration:underline;
 }
@@ -91,7 +99,6 @@
 }
 
 .main .article .card .descripcion .pagar-container .pagar {
-    /* border: 2px solid red; */
     height: 40px;
     display: flex;
     align-items: center;
