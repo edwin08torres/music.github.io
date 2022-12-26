@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #1d0e29 0%, #43c);
+}
+
+.main .article {
+    height: 75%;
+    min-width: 280px;
+    max-width: 340px;
+    width: 100%;
+    margin: 0 20px;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    background-color: rgb(252, 252, 252);
+}
+
+.main .article .card .background {
+    height: 20vh;
+    background: url('../img/illustration-hero.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 17px 17px 0 0;
+}
+
+.main .article .card .descripcion {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 55vh;
+}
+
+.main .article .card .descripcion .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    /* border: 2px solid red; */
+    height: 100px;
+    margin-top: 10%;
+}
+
+.main .article .card .descripcion .title p {
+    font-size: 16px;
+}
+
+.main .article .card .descripcion .music-detail {
+    width: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.main .article .card .descripcion .music-detail .detalle-plan p {
+    font-weight: bold;
+}
+
+.main .article .card .descripcion .music-detail .detalle-plan span {
+    color: hsl(224, 23%, 55%);
+}
+
+.main .article .card .descripcion .music-detail .change {
+    color: hsl(223, 47%, 23%);
+    font-size: 20px;
+}
+
+.main .article .card .descripcion .music-detail .change:hover {
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+.main .article .card .descripcion .pagar-container {
+    width: 80%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.main .article .card .descripcion .pagar-container .pagar {
+    /* border: 2px solid red; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+}
+
+.main .article .card .descripcion .pagar-container .pagar:hover {
+    background-color: hsla(245, 75%, 52%, 0.714);
+    cursor: pointer;
+}
+
+.main .article .card .descripcion .pagar-container .cancel {
+    margin-top: 20px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.main .article .card .descripcion .pagar-container .cancel:hover {
+    color: hsla(245, 75%, 52%, 0.714);
+    cursor: pointer;
+}
